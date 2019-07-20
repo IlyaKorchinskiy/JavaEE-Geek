@@ -1,0 +1,9 @@
+Connected to server
+[2019-07-20 01:40:10,517] Artifact JavaEEApp:war: Artifact is being deployed, please wait...
+13:40:10,699 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0027: Starting deployment of "JavaEEApp.war" (runtime-name: "JavaEEApp.war")
+13:40:11,701 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-6) ISPN000128: Infinispan version: Infinispan 'Infinity Minus ONE +2' 9.4.14.Final
+13:40:12,149 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 24) WFLYCLINF0002: Started client-mappings cache from ejb container
+13:40:12,339 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 24) WFLYUT0021: Registered web context: '/JavaEEApp' for server 'default-server'
+13:40:12,399 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0010: Deployed "JavaEEApp.war" (runtime-name : "JavaEEApp.war")
+[2019-07-20 01:40:12,419] Artifact JavaEEApp:war: Artifact is deployed successfully
+[2019-07-20 01:40:12,419] Artifact JavaEEApp:war: Deploy took 1 902 milliseconds
