@@ -1,0 +1,34 @@
+package ru.korchinskiy.servlet;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import java.io.PrintWriter;
+
+@WebServlet(urlPatterns = "/cart")
+public class CartServlet extends HttpServlet {
+
+    @Override
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        resp.setContentType("text/html;charset=UTF-8");
+        try (PrintWriter out = resp.getWriter()) {
+            out.println("<!DOCTYPE html>");
+            out.println("<html>");
+            out.println("<head>");
+            out.println("<title>Cart</title>");
+            out.println("</head>");
+            out.println("<body>");
+            out.println("<h1>Cart</h1>");
+            out.println("<ul>");
+            out.println("<li><a href='" + getServletContext().getContextPath() + "/main'>Main</a></li>");
+            out.println("<li><a href='" + getServletContext().getContextPath() + "/catalog'>Catalog</a></li>");
+            out.println("<li><a href='" + getServletContext().getContextPath() + "/cart'>Cart</a></li>");
+            out.println("</ul>");
+            out.println("</body>");
+            out.println("</html>");
+        }
+    }
+}
