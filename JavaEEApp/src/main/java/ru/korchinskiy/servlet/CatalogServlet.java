@@ -22,6 +22,11 @@ public class CatalogServlet extends HttpServlet {
             out.println("</head>");
             out.println("<body>");
             out.println("<h1>Catalog</h1>");
+            out.println("<ul>");
+            out.println("<li><a href='" + getServletContext().getContextPath() + "/main'>Main</a></li>");
+            out.println("<li><a href='" + getServletContext().getContextPath() + "/catalog'>Catalog</a></li>");
+            out.println("<li><a href='" + getServletContext().getContextPath() + "/cart'>Cart</a></li>");
+            out.println("</ul>");
             out.println("</body>");
             out.println("</html>");
         }
